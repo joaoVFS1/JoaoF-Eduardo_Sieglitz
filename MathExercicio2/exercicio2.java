@@ -8,10 +8,13 @@ e) Calcular o máximo entre dois números:
 f) Calcular o mínimo entre dois números:
 g) Calcular o seno de um ângulo em radianos:
 h) Calcular o cosseno de um ângulo em radianos:*/
+import java.util.Scanner;
 public class exercicio2 {
     public static void main(String[] args) {
-        double ValorX = 100.9999, ValorY = -1.0;
-
+        Scanner s = new Scanner(System.in);
+        double ValorX;
+        System.out.println("Digite um valor: ");
+        ValorX = s.nextDouble();
         //a)
         System.out.println(Math.ceil(ValorX));
 
@@ -31,9 +34,9 @@ public class exercicio2 {
         System.out.println(Math.min(10 , 20));
 
         //g)
-        System.out.println(Math.asin(ValorY));
+        System.out.println(Math.asin(ValorX));
 
         //h)
-        System.out.println(Math.acos(ValorY));
+        System.out.println(Math.acos(ValorX));
     }
 }
