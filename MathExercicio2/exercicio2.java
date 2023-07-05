@@ -12,9 +12,11 @@ import java.util.Scanner;
 public class exercicio2 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        double ValorX;
+        double ValorX, ValorY;
         System.out.println("Digite um valor: ");
         ValorX = s.nextDouble();
+        System.out.println("Digite um valor: ");
+        ValorY = s.nextDouble();
         //a)
         System.out.println(Math.ceil(ValorX));
 
@@ -25,13 +27,13 @@ public class exercicio2 {
         System.out.println(Math.random());
 
         //d)
-        System.out.println(Math.abs(-1));
+        System.out.println(Math.abs(ValorY));
 
         //e)
-        System.out.println(Math.max(10, 20));
+        System.out.println(Math.max(ValorX, ValorY));
 
         //f)
-        System.out.println(Math.min(10 , 20));
+        System.out.println(Math.min(ValorX, ValorY));
 
         //g)
         System.out.println(Math.asin(ValorX));
